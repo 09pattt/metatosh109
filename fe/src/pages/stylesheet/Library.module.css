@@ -1,0 +1,13 @@
+.hero_text {
+    margin-top: 5vh;
+    font-size: 3.2em;
+    font-weight: 700;
+    color: #c0c0a0;
+    text-align: center;
+}
+
+.sub_hero_text {
+    font-size: 2em;
+    color: #808080;
+    text-align: center;
+}

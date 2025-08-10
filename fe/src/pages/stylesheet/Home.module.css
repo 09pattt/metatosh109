@@ -1,0 +1,90 @@
+.space {
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #FFFFF0;
+}
+
+.main1 {
+    width: 100%;
+    height: fit-content;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.heroSection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 100px);
+}
+
+.titleBlock {
+    grid-column: 2 span;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .titleBlock > div {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .title1 {
+            color: #FF9B00;
+            font-weight: 700;
+            font-size: 40px;
+            font-family: var(--default-os-font);
+        }
+
+        .subtitle1 {
+            width: 100%;
+            text-align: center;
+        }
+
+.desBlock {
+    grid-column: 2 span;
+    grid-row: 3 span;
+    align-content: center;
+    padding: 0 1em 0 1em;
+}
+
+    .des1 {
+        text-align: start;
+    }
+
+    .desFooter {
+        text-align: end;
+    }
+
+    .license {
+        text-align: end;
+        color: #608BC1;
+    }
+
+/*Responsive handle*********************************************************************************/
+
+/*Mobile device------------------------------------------------------------------------------------*/
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .localRoot {
+        --global-phase: 10px;
+        --content-tp-column: minmax(0, 1fr);
+        --hero-column: 1;
+        --block-transition: all 500ms ease;
+    }
+}
+
+
+/*Desktop device-----------------------------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+    .localRoot {
+        --global-phase: 20px;
+        --content-tp-column: repeat(2, 1fr);
+        --hero-column: span 2;
+        --block-transition: all 500ms ease;
+    }
+}

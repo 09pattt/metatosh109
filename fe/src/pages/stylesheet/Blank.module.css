@@ -1,0 +1,39 @@
+body {
+    background-color: #303040;
+    color: #808080;
+}
+
+.page main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    min-width: 320px;
+    height: 100dvh;
+    min-height: 720px;
+
+    padding-top: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page footer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    min-width: 320px;
+    height: 100dvh;
+    min-height: 720px;
+
+    display: flex;
+    align-items: end;
+}
+
+.page footer > p {
+    position: relative;
+    left: 50%;
+    bottom: 2em;
+    transform: translate(-50%, 0%);
+}
