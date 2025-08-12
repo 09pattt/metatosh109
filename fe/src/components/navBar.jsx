@@ -1,4 +1,4 @@
-//NavBar component version 1 => include these files ('navBar.css', 'css/navBar.module.css') reference from 'root/src/components'.
+//Extended version from version 1.
 
 import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
@@ -60,7 +60,7 @@ function NavBar() {
                         <div className={styles.navLogoCover}>
                             <Link to='/'><img className={styles.navLogo} src='/images/logo/metatosh.png'></img></Link>
                         </div>
-                        <p className={styles.navTitle}>Pat's mission control</p>
+                        <p className={styles.navTitle}>Stage Sound Controller</p>
                     </div>
                     <div className={styles.navOptCover}>
                         <div className={styles.navOptBar}>

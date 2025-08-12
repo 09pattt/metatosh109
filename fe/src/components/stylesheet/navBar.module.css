@@ -13,7 +13,7 @@
     height: 50px;
     width: 100vw;
     background: #F0F0F0AA;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(16px);
     display: flex;
     align-items: center;
     overflow: hidden;
